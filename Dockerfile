@@ -8,13 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install app dependencies
-RUN npm install
+#RUN npm install
 
 # Copy the rest of the application code to the working directory
 COPY . .
 
 # Build the Vue.js app for production
-RUN npm run build
+#RUN npm run build
 
 # Expose port 9528
 EXPOSE 9528
